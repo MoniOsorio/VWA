@@ -35,11 +35,22 @@ iconElement.setAttribute(
   response.data.weather[0].description
 );
 }
-let city= "tegucigalpa";
-let apiKey = "a163a00e6099e0b4d7da2e23a921eeff";
+
+function search (city){
+  let apiKey = "a163a00e6099e0b4d7da2e23a921eeff";
 let apiUrl =
   `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
-
- 
   axios.get(apiUrl).then(displayTemperature);
+} 
+
+function handleSubmit(event){
+  event.preventDefault();
+  let cityInputElement = document.querySelector("#city-input");
+search(cityInputElement.value);
+} 
+
+search()
+
+  let form=document.querySelector("#search-form");
+  form.addEventListener("submit", handleSubmit);
