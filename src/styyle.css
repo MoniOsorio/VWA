@@ -36,6 +36,23 @@ ul{
     margin: 0;
     padding: 0;
 }
-{}
-{}
-{}
+.weather-temperature img {
+    margin-right: 5px;
+    float: left;
+    height: 64px;
+    width: 64px;
+}
+.overview{
+    margin-bottom: 20px;
+}
+.weather-temperature strong {
+color:black;
+font-size: 64px;
+font-weight: 350;
+line-height: 1;
+}
+.weather-temperature .units {
+    position: relative;
+    font-size: 16px;
+    top: -34px;
+}
