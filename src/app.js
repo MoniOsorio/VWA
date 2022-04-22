@@ -8,6 +8,41 @@ function formatDate(timestamp) {
    return `${day} ${hours}:${minutes}   `;
 }
 
+function displayForecast(){
+  let forecastElement= document.querySelector("#wforecast");
+let wforecastHTML= `<div class="row">`;
+let days = [
+  "Sunday",
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+];
+days.forEach(function(day){
+ wforecastHTML= wforecastHTML+`
+
+   <div class="col-2">
+      <div class="week-day">
+         ${day}
+      </div>
+      <img src="https://ssl.gstatic.com/onebox/weather/48/sunny_s_cloudy.png" 
+        alt="" width="36" />
+       <div class="forecast-temp">
+      <span class="forecast-temp-min">
+      4°
+      </span>
+       <span class="forecast-temp-max">
+         9° </span>
+       </div>
+    </div>
+`;
+});
+   wforecastHTML = wforecastHTML+`</div>`;
+  
+forecastElement.innerHTML = wforecastHTML;
+} 
+
 
 function displayTemperature(response){
 
@@ -70,6 +105,7 @@ temperatureElement.innerHTML= Math.round(fahrenheitTemp);
  } 
  let celsiusTemp= null;
 
+ 
 
 
   let form=document.querySelector("#search-form");
@@ -82,3 +118,4 @@ temperatureElement.innerHTML= Math.round(fahrenheitTemp);
   let celsius = document.querySelector("#celsius");
   celsius.addEventListener("click", displayCTemp);
   search("Oslo");
+  displayForecast();
