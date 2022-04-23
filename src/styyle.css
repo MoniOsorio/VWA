@@ -1,7 +1,25 @@
-body {
-    font-family: Arial, Helvetica, sans-serif;
+header {
+  font-family: "Fjalla One", sans-serif;
+  position: fixed;
+  color: #fbbc04;
+  font-size: 46px;
+  background-color: transparent;
+  left: 3%;
+  top: 0;
+  right: 0;
+  z-index: 1030;
+
 }
 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.container{
+    background-image: url('/image/sshine.jpg');
+background-repeat: no-repeat;
+margin: 0 auto;
+}
 
 .wa-wrapper{
   max-width: 600px;
@@ -15,12 +33,13 @@ body {
 }
 
 h1{
-    color: 878787;
-    font-size: 24px;
+    color: #fbbc04;
+    font-family: "Fjalla One", sans-serif;
+    font-size: 40px;
     font-weight: 100;
     text-align: left;
     line-height: 28px;
-    margin-bottom: 0;
+    margin-bottom: 10px;
 }
 li{
     list-style: none;
@@ -39,6 +58,10 @@ ul{
     margin: 0;
     padding: 0;
 }
+.btn-primary {
+  border-color: #ff8264;  
+background-color:#ff8264;}
+
 .weather-temperature img {
     margin-right: 5px;
     float: left;
