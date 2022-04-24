@@ -12,8 +12,8 @@ header {
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-image: url("/image/sshine.jpg");
-  background-repeat: no-repeat;
+  background-image: url('/image/sshine.jpg');
+
 }
 .container {
   margin: 0 auto;
@@ -28,7 +28,9 @@ body {
   border: 1px solid #dadde1;
   border-radius: 5px;
 }
-
+.col-5 {
+text-align:right;
+    }
 h1 {
   color: #fbbc04;
   font-family: "Fjalla One", sans-serif;
@@ -68,12 +70,14 @@ ul {
 }
 .overview {
   margin-bottom: 20px;
+  text-align: justify;
 }
 .weather-temperature strong {
   color: black;
   font-size: 64px;
   font-weight: 350;
   line-height: 1;
+  
 }
 .weather-temperature .units {
   position: relative;
@@ -94,6 +98,7 @@ ul {
   text-align: center;
   font-size: 16px;
   cursor: default;
+  padding: 0 auto;
 }
 .week-day {
   font-size: 16px;

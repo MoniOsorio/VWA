@@ -35,7 +35,7 @@ forecast.forEach(function(forecastDay, index){
     wforecastHTML =
       wforecastHTML +
       `
-   <div class="col-sm">
+   <div class="col-2">
       <div class="week-day"> ${formatDay(forecastDay.dt)}
   
       </div>
