@@ -43,7 +43,7 @@ h1 {
 li {
   list-style: none;
   color: rgb(135, 135, 135);
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 100;
   line-height: 19px;
   margin: 0;
@@ -98,14 +98,15 @@ ul {
   text-align: center;
   font-size: 20px;
   cursor: default;
-  padding: 0 auto;
+  padding: 20px 0auto;
+  margin-left: 45px;
 }
 .week-day {
   font-size: 24px;
   color: #c51350;
 }
 .forecast-temp {
-  font-size: 13px;
+  font-size: 18px;
 }
 .forecast-temp-min {
   color: dimgrey;

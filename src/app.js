@@ -42,7 +42,7 @@ forecast.forEach(function(forecastDay, index){
       <img src="http://openweathermap.org/img/wn/${
         forecastDay.weather[0].icon
       }@2x.png" 
-        alt="" width="36" />
+        alt="" width="56" />
        <div class="forecast-temp">
       <span class="forecast-temp-min">
       ${Math.round(forecastDay.temp.min)}°
